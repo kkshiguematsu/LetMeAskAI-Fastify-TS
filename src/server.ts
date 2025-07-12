@@ -6,6 +6,8 @@ import {
 } from "fastify-type-provider-zod"
 import { fastifyCors } from "@fastify/cors"
 import { env } from "./env.ts"
+import { sql } from "./db/connection.ts"
+import { getRoomsRoute } from "./http/routes/get-rooms.ts"
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -16,6 +18,6 @@ app.register(fastifyCors, {
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
-app.listen({ port: env.PORT}).then(() => {
-    console.log("RODANDO")
-})
+app.register(getRoomsRoute)
+
+app.listen({ port: env.PORT})
