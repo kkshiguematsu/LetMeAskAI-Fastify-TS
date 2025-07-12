@@ -17,6 +17,5 @@ app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
 app.listen({ port: env.PORT}).then(() => {
-    console.log(`PORT: ${process.env.PORT}`)
-    console.log("HTTP server runnning!")
+    console.log("RODANDO")
 })
