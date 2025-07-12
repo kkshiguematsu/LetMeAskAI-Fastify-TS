@@ -9,6 +9,7 @@
 
     "noEmit": true,
     "allowArbitraryExtensions": true,
+    "allowImportingTsExtensions": true,
 
     "strict": true,
     "esModuleInterop": true,
