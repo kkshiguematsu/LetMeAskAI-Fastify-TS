@@ -15,6 +15,13 @@
       "when": 1752415479400,
       "tag": "0001_daily_lifeguard",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752445341643,
+      "tag": "0002_strange_shooting_star",
+      "breakpoints": true
     }
   ]
 }
